@@ -1,0 +1,75 @@
+.item{
+   color: var(--mediumGray);
+   cursor: pointer;
+   position: relative;
+}
+
+.title:hover{
+   color: var(--almostBlack);
+}
+
+.arrow{
+   margin-left: 8px;
+   width: 10px;
+   height: 6px;
+   object-position: center;
+   vertical-align: middle;
+}
+
+
+.subMenu{
+   position: absolute;
+   background-color: #fff;
+   padding: 15px;
+   border-radius: 8px;
+   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+   width: max-content;
+   top: 30px;
+}
+
+
+.subItem{
+   padding: 10px;
+}
+.subItem a{
+   color: inherit;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.subItem a:hover{
+   color: var(--almostBlack);
+}
+
+.subItem a img{
+   margin-right: 12px;
+   width: 16px;
+}
+
+.fistSubMenu{
+   transform: translateX(-100%);
+   left: 100%;
+}
+
+@media (max-width:992px){
+   .subMenu{
+      position:relative;
+      padding: 15px  0 0 15px;
+      border-radius: 0px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      width: max-content;
+      background-color: inherit;
+      top: 0;
+   }
+   .title:hover{
+      color: var(--mediumGray);
+   }
+   .subItem a:hover{
+      color: var(--mediumGray);
+   }
+}

@@ -1,0 +1,93 @@
+.hero{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 40px 40px 40px 40px;
+   display: grid;
+   grid-template-columns: 1.1fr 1fr;
+   gap: 110px;
+}
+
+
+.heroContent{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.contentText{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   flex: 1 0 0;
+}
+
+.title{
+   font-weight: 700;
+   font-size: 80px;  
+   width: 100%;
+}
+
+.textBlock{
+   margin: 50px 0;
+}
+
+.text{
+   font-size: 18px;
+   color: var(--mediumGray);
+   line-height: 150%;
+}
+
+.heroImages{
+   width: 100%;
+}
+.clients{
+   margin-top: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+}
+.clients div img{
+   width: 100%;
+}
+
+
+@media (max-width:1040px){
+   .hero{
+      gap: 40px;
+   }
+   .title{
+      font-size: 60px;
+   }
+   .textBlock{
+      margin: 30px 0;
+   }
+}
+
+@media (max-width:992px){
+   .hero{
+      padding: 20px 0 40px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+   }
+   .heroImagesContainer{
+      order: -1;
+   }
+   .contentText{
+      align-items: center;
+      margin: 0 15px;
+   }
+   .title{
+      text-align: center;
+      font-size: 36px;
+      margin-top: 50px;
+   }
+   .text{
+      text-align: center;
+   }
+   .clients{
+      margin: 40px 15px;
+   }
+}
